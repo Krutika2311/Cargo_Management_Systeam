@@ -1,0 +1,139 @@
+<!Doctype html>
+<html>
+<head>
+<title>Order</title>
+<style>
+.container {
+  padding: 16px;
+  background-color: pink;
+.text-block{text-size:10;position:absolute;top:100px;right:80px;color:white;padding-left:20px;padding-right:20px;font-size:20px;}
+}
+
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #4CAF50;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+#right-bar{
+float:right;
+width:100px;
+height:100%;
+border-left:1px solid black;}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 13px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.closebtn:hover {
+  color: black;
+}
+
+</style>
+</head>
+
+<body>
+<h1 style="color:white;text-align:center;background-color:black">DETAILS<br></h1>
+<div class="topnav">
+  <a class="active" href="home page.html">Home</a>
+  <a href="contact us.html">Contact</a>
+  <a href="about us.html">About</a>
+  <a href="banned product page.html">Banned Product</a>
+</div>
+<form action="orders.php" method="POST">
+<div class="container"><img src="cargo.jpg" alt="image" width="900" height="550" style="float:right">
+<div class="text-block">
+<b>Product Type:</b><br><select name="pt" id="a1"> 
+     <optgroup label="EATABLES">
+		<option value="Fruits">Fruits</option>
+		<option value="Spices">Spices</option>
+		<option value="Herbs">Herbs</option>
+	</optgroup>
+	<optgroup label="ELECTRONICS">
+		<option value="Mobile Phones">Mobile Phones</option>
+		<option value="Laptops">Laptops</option>
+		<option value="Computers">Computers</option>
+	</optgroup>
+	<optgroup label="HOME DECORATING PRODUCTS">
+		<option value="Furniture">Furniture</option>
+		<option value="Vase">Vase</option>
+		<option value="Frames">Frames</option>
+	</optgroup>
+	<optgroup label="MEDICINES">
+		<option value="Tablets">Tablets</option>
+		<option value="Syringes">Syringes</option>
+		<option value="Bandages">Bandages</option>
+	</optgroup>
+	<optgroup label="KIDS PRODUCTS">
+		<option value="Toys">Toys</option>
+		<option value="Clothes">Clothes</option>
+		<option value="Study Material">Study Material</option>
+	</optgroup>
+	<optgroup label="MACHINES">
+		<option value="Refrigrators">Refrigrators</option>
+		<option value="Ovens">Ovens</option>
+		<option value="Washing Machines">Washing Machines</option>
+	</optgroup>
+	<optgroup label="MECHANICAL PRODUCTS">
+		<option value="Spare Parts">Spare Parts</option>
+		<option value="Memory Chips">Memory Chips</option>
+		<option value="Instrument">Instrument</option>
+	</optgroup>
+	</select><br><br>
+	
+	<label><b> Product Quantity </b></label>    <br>
+<input type="text" name="pq" placeholder="In Boxes/Tubes" size="15"required />   <br><br>  
+<br>	<b> Product Package </b><select name="pp" id="a1"> 
+<option selected>----Select----</option>
+	<option value="Box">BOXED</option>
+		<option value="Tubes">TUBES</option>
+		</select><br><br>
+
+	<br><b>Delivery Mode:</b><br>
+	   <input type="radio" name="dm" value="Sea"required />Sea<br>
+	   <input type="radio" name="dm" value="Road"required />Road<br>
+	   <input type="radio" name="dm" value="Air"required />Air<br>
+	   
+	
+<br><br><b>Delivery Type:</b><br>
+<input type="radio" name="dt" value="Ship"required />Ship<br>
+	   <input type="radio" name="dt" value="train"required />Train<br>
+	   <input type="radio" name="dt" value="Aeroplane"required />Aeroplane<br>
+<br><br>
+<label style="font-size:18px"><b>Source: <br><input type="text" name="source" required><br>
+
+<br><br>
+<label style="font-size:18px"><b>Destination:<br><input type="text" name="des"required><br>
+
+<br><br>
+<label style="font-size:18px"><b>Destination Address:<br><input type="text" name="add"required><br>
+
+<br><br>
+ <center><input type="submit" class="block" value="Submit" /></center>
+</form>
+</div>
+
+</body>
+</html>

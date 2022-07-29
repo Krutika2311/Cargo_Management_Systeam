@@ -1,0 +1,91 @@
+<!Doctype html>
+<html>
+<head>
+
+     <!-- <script language="javascript">
+     function multiply(){
+     var ans= (document.form.one.value)*(document.form.two.value)
+     document.form.answer.value=ans; 
+
+     </script> -->
+</head>
+
+<body>
+<center>
+<form action="bill.php" method="POST">
+<div class="column">
+<h2>Bill Calculator</h2>
+<label style="font-size:18px">Distance in kms:
+<input type="text" name="one" placeholder="Enter the distance in kms" required ></label><a href="http://maps.google.com/">Please Check Distance and enter</a> <br>
+<br><label style="font-size:18px">Weight:
+<input type="text" name="two" placeholder="Weight in kgs" required></label><br>
+<p style="margin-left:-90px,font-size:14px;">Pay Type&nbsp;&nbsp;:<input type="radio" name="pay" value="COD"><b>Cash On Delivery</b><br>
+    <input type="radio" name="pay" value="Card" style="margin-left: 63px;"><b>Card Payment</b></p>
+
+<!--<label style="font-size:18px">Total Bill Amount:
+<input type="text"  name="answer" placeholder="Your Total Bill is "><br><br>
+<input type="button"  value="Click me to see your total Bill" name="now" onClick="multiply()"><br><br>-->
+		<label style="text-align:center;font-size:18px">To Find the Volumetric Weight click on the button:
+		
+      <input type="submit" class="clickme" onclick="window.location.href='Weight calculator page.html';" value="ClickMe" /></center><br>
+	  <center><input type="submit" class="clickme" onclick="window.location.href='finall bill.php';" style="background-color:aqua;" value="NEXT" /></center><br><br>
+	   <center><input type="button" class="block" onclick="window.location.href='order.html';" value="CANCEL" /></center>
+</div>
+</form>
+<br>
+<br>
+</tr>
+<br><br><br>
+<style type="text/css">
+.block {
+  display: block;
+  width: 50%;
+  border: none;
+  background-color: #4CAF50;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+.clickme{
+width:20%;
+border:2px solid black;
+background-color:lightblue;
+font-size:14px;
+}
+label {
+  margin-bottom: 10px;
+  display: block;
+  font-size:30px;
+}
+.column{flex:100%;padding:100px;height:300px;width:1000px;background-color:pink;"}
+.click{
+	display:block;
+	width:50%;
+	border:none;
+	background-color:pink;
+	padding:14px 28 px;
+	font-size:16px;
+	text-align:center;
+</style>
+
+<!--<label for="Cash Payment"><b>Cash Payment</b></label>
+
+<form>
+
+      <center><input type="button" class="block" onclick="window.location.href='Thanks page.html';" value="ClickMe" /></center>
+
+</form>
+<br><br>
+
+<label for="Online Payment"><b>Online Payment</b></label>
+
+
+
+      <center><input type="button" class="block" onclick="window.location.href='Payment.html';" value="ClickMe" /></center>
+
+</form>
+<h3 style="color:black;">Follow Us:<img src="followus.jpg" alt="Follow Us" width="200" height="50"></h3>
+</body>
+</html>
+

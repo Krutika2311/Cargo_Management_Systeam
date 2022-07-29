@@ -1,0 +1,72 @@
+<!Doctype html>
+<html>
+<head>
+<script language="javascript">
+     function multiply(){
+     var ans= (document.form.one.value)*(document.form.two.value)*(document.form.three.value)/5000
+     document.form.answer.value=ans;
+     }
+     </script>
+</head>
+<body>
+
+<h1 style="color:white;text-align:center;background-color:black;font-size:40px">Volumetric Weight</h1>
+<p style="font-size:20px">The cost of a shipment can be affected by the amount of space that it occupies on an aircraft, rather than the actual weight. This is the volumetric (or dimensional) weight.<br>
+<br>
+Length * width * height/5000 per piece in the shipment.<br><br></p>
+
+<h2><center><b>Use the calculator tool to determine the volumetric weight of shipments.</b></center></h2>
+
+
+
+<center>
+<div   class="column">
+	<div>
+		<label><b>Package Type:</b></label>
+		<input type="radio"  value="Box" name="Package Type" checked> Box
+		<input type="radio"  value="Tube" name="Package Type" > Tube
+	</div>
+	
+	<div>
+		<label><b>Units of Measure:</b></label>
+		<input type="radio"  value="cm/kg" name="Units of Measure" checked> cm/kg
+		<input type="radio"  value="Inches/Pounds" name="Units of Measure" > Inches/Pounds
+	</div>
+	<br>
+	<div>
+		<form name="form">
+		<label><b>Length:</b></label>
+		<input type="text" class="block" name="one" placeholder="Enter Length" size="10"/><br><br>
+		<label><b>Width:</b></label>
+		<input type="text" class="block" name="two" placeholder="Enter Width" size="10"/><br><br>
+		<label><b>Height:</b></label>
+		<input type="text" class="block" name="three" placeholder="Enter Height" size="10"/><br><br>
+		<label><b>Volumetric Weight(in kgs):</b></label>
+		<input type="text"   class="block" name="answer" placeholder="Weight is"><br><br>
+		<input type="button" class="block" value="Calculate" name="now" onClick="multiply()"></form>
+	</div>
+</div>
+</center>
+<br>
+<br>
+<form>
+      <center><input type="button" style="width:100%;background-color:#4CAF50;padding:14px 28px;font-size:12px" onclick="window.location.href='bill.html';" value="Back" /></center>
+</form>
+<h3 style="color:black;">Follow Us:<img src="followus.jpg" alt="Follow Us" width="200" height="50"></h3>
+<style>
+
+.column{flex:50%;padding:50px;border:2px solid black;height:200px;width:500px;background-color:lightblue;"}
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #4CAF50;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+</style>
+</body>
+</html>

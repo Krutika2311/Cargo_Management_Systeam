@@ -1,0 +1,82 @@
+<!Doctype html>
+<html>
+<head>
+<title>new1</title>
+<style>
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #4CAF50;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+</style>
+</head>
+<body>
+<form>  
+  <div class="container">  
+  <center>  <h1>Registration Form</h1> </center> 
+	<center><p>Please fill in this form to create an account.</p></center>
+  <hr>  
+  <label><b> Firstname </b></label>   <br>
+<input type="text" name="firstname" placeholder= "Firstname" id="firstname" size="15" required /> <br><br>
+<label> Middlename: </label>   <br>
+<input type="text" name="middlename" placeholder="Middlename" size="15" required />   <br><br>
+<label> Lastname: </label>    <br>
+<input type="text" name="lastname" placeholder="Lastname" size="15"required />   <br><br>
+ 
+<div>  
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" value="Male" name="gender" checked > Male   <br>
+<input type="radio" value="Female" name="gender"> Female   <br>
+<input type="radio" value="Other" name="gender"> Other  <br>
+  <br><br>
+</div>  
+<label>   
+Phone :  
+</label>  
+<input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/> 
+<input type="text" name="phone" placeholder="phone no." size="10"/ required>  <br><br>   
+ <label for="email"><b>Email</b></label>  <br>
+ <input type="text" placeholder="Enter Email" name="email" required>  <br><br> 
+  
+    <label for="psw"><b>Password</b></label>  <br>
+    <input type="password" placeholder="Enter Password" name="psw" required>  <br><br> 
+  
+    <label for="psw-repeat"><b>Re-type Password</b></label>  <br>
+    <input type="password" placeholder="Retype Password" name="psw-repeat" required>  <br><br> 
+    <form>
+      <center><input type="button" class="block" onclick="window.location.href='file:///C:/Users/wadgh/Desktop/kru/login1%20page.html';" value="SignUp" /></center>
+    </form>
+</form>  
+</body>
+</html>

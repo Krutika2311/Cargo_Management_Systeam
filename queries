@@ -1,0 +1,7 @@
+create table order1(order_no serial primary key,source varchar(30),destination varchar(30),destination_address varchar(30),product_type varchar(30),product_quantity varchar(60),product_package varchar(20),delivery_type varchar(20),deLivery_mode varchar(40),date date,cid int references customers(cust_id));
+delete from customers where cust_id=36;
+truncate table login;
+alter table order1 add column date date;
+create table payment(pay_id serial primary key,type varchar(10),total float,orno int references order1(order_no));
+create sequence pay start 1 increment 3;
+create table admin(adminid varchar(30) primary key,password varchar(40));
